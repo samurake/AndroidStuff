@@ -175,16 +175,6 @@
         tools:textAlignment="center" />
 
     <Button
-        android:text="EXIT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/exitButton"
-        android:layout_alignBaseline="@+id/cButton"
-        android:layout_alignBottom="@+id/cButton"
-        android:layout_toRightOf="@+id/divButton"
-        android:layout_toEndOf="@+id/divButton" />
-
-    <Button
         android:text="Credits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -192,4 +182,22 @@
         android:layout_toRightOf="@+id/cButton"
         android:layout_toEndOf="@+id/cButton"
         android:id="@+id/creditsButton" />
+
+    <Button
+        android:text="EXIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exitButton"
+        android:layout_above="@+id/creditsButton"
+        android:layout_toRightOf="@+id/cButton"
+        android:layout_toEndOf="@+id/cButton" />
+
+    <Button
+        android:text="SQRT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button0"
+        android:layout_toRightOf="@+id/divButton"
+        android:layout_toEndOf="@+id/divButton"
+        android:id="@+id/sqrtButton" />
 </RelativeLayout>
