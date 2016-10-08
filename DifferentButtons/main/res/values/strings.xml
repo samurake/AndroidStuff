@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DifferentButtons</string>
+    <string name="on">B-ON</string>
+    <string name="off">B-OFF</string>
+    <string name="switchon">SW-ON</string>
+    <string name="switchoff">SW-OFF</string>
+    <string name="title_activity_serve_tea">ServeTeaActivity</string>
+</resources>

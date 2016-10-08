@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="corporation.chiriestudio.differentbuttons.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="595dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:textOn="@string/on"
+        android:textOff="@string/off"
+        android:onClick="onButtonClickToggler"
+        android:id="@+id/toggleButton" />
+
+    <CheckBox
+        android:text="Choice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch1"
+        android:layout_alignLeft="@+id/toggleButton"
+        android:layout_alignStart="@+id/toggleButton"
+        android:layout_marginTop="68dp"
+        android:onClick="onCheckBoxChecked"
+        android:id="@+id/checkBox" />
+
+    <CheckBox
+        android:text="Choice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:onClick="onCheckBoxChecked"
+        android:id="@+id/checkBox2" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2">
+    <RadioButton
+        android:text="Choice3"
+        android:onClick="onRadioBoxChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2"
+        android:layout_marginTop="40dp" />
+
+    <RadioButton
+        android:text="Choice4"
+        android:onClick="onRadioBoxChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignLeft="@+id/radioButton"
+        android:layout_alignStart="@+id/radioButton" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="TEA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onTeaServeIntent"
+        android:drawableLeft="@drawable/ic_stat_name"
+        android:id="@+id/serve_tea" />
+
+    <Switch
+        android:text="Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/switch1"
+        android:textOn="@string/switchon"
+        android:textOff="@string/switchoff"
+        android:onClick="onSwitchOnOff"
+        android:layout_below="@+id/toggleButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>
